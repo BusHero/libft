@@ -6,7 +6,7 @@
 /*   By: pcervac <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/22 19:34:20 by pcervac           #+#    #+#             */
-/*   Updated: 2016/12/22 21:25:11 by pcervac          ###   ########.fr       */
+/*   Updated: 2017/01/21 15:22:37 by pcervac          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
+
+int		ft_isnbr(const char *str);
 
 #endif

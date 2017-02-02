@@ -6,7 +6,7 @@
 /*   By: pcervac <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/14 12:25:08 by pcervac           #+#    #+#             */
-/*   Updated: 2017/01/15 19:12:20 by pcervac          ###   ########.fr       */
+/*   Updated: 2017/01/20 15:07:05 by pcervac          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_lstc_swap_l(t_c_list **root)
 	content = GET_CONT(*root);
 	content_size = GET_CONT_SIZE(*root);
 	GET_CONT(*root) = GET_CONT(LEFT(*root));
-	GET_CONT_SIZE(*root) = GET_CONT_SIZE(LEFT(*root));	
+	GET_CONT_SIZE(*root) = GET_CONT_SIZE(LEFT(*root));
 	GET_CONT(LEFT(*root)) = content;
 	GET_CONT_SIZE(LEFT(*root)) = content_size;
 }

@@ -6,7 +6,7 @@
 /*   By: pcervac <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/22 19:22:02 by pcervac           #+#    #+#             */
-/*   Updated: 2017/01/10 15:55:02 by pcervac          ###   ########.fr       */
+/*   Updated: 2017/01/20 12:50:18 by pcervac          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 # define FT_STDLIB_H
 
 # include <stdlib.h>
-# include <inttypes.h>
+
+# define GET_INT(val)	(*(int*)(val))
 
 int			ft_abs(int nbr);
 int			ft_atoi(const char *nb_ptr);

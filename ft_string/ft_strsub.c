@@ -16,11 +16,13 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*str;
+	size_t	size;
 
 	i = 0;
 	str = NULL;
 	if (s != NULL)
 	{
+		size = ft_strlen(s);
 		if (NULL != (str = ft_strnew(len)))
 			while (s[start] != '\0' && i != len)
 				str[i++] = s[start++];
